@@ -38,3 +38,9 @@ class Solution:
             return n
         else:
             return(self.fib(n-1)+self.fib(n-2))
+        
+
+# Awesome golden ration math solution
+class Solution:
+    def fib(self, n: int) -> int:
+        return int((((1 + 5 ** 0.5) / 2) ** n + 1) / 5 ** 0.5)
