@@ -57,7 +57,6 @@ class Solution:
         :rtype: void Do not return anything, modify node in-place instead.
         """
         while node.next != None:
-            # print(node.val)
             node.val = node.next.val
             if node.next.next != None:
                 node = node.next

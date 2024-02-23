@@ -47,7 +47,7 @@ The number of nodes in the list is in the range [1, 5000].
 class Solution:
     def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[ListNode]:
         curr = head
-        while curr.next != None and curr.next !=None:
+        while curr != None and curr.next != None:
             curr.next = ListNode(gcd(curr.val,curr.next.val), next=curr.next)
             curr = curr.next.next
         return head
